@@ -49,7 +49,7 @@ public class edificio {
     String DatosE (){
        String Info = "";
        
-       Info += "La ubicación del Edificio es: Santiago Nonuaco, La Paz, El Salvador" + "\n";
+       Info += "La ubicación del Edificio es: Zacatecoluca, La Paz, El Salvador" + "\n";
        Info += "El nombre del Departamento es: A" + "\n";
        Info += "La cantidad de Departamentos que alberga son: 1" + "\n"; 
        Info += "La cantidad de pisos son: 10" + "\n";

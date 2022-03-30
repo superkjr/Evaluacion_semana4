@@ -39,6 +39,7 @@ public class empleado extends edificio {
         return nombre;
     }
 
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
