@@ -40,13 +40,13 @@ public class datosMain {
         System.out.println("Escriba el sueldo base/bruto del empleado: ");
         Dempleado.setSueldo(Double.parseDouble(leer.nextLine()));
         System.out.println("Digite el codigo de Area: ");
-        area.setCarea(Integer.parseInt(leer.nextLine()));
+        area.setCodArea(Integer.parseInt(leer.nextLine()));
         System.out.println("Digite el nombre del area");
-        area.setnombre(leer.nextLine());
+        area.setNombre(leer.nextLine());
         System.out.println("Digite la cantidad de empleados: ");
-        area.setCEmpleado(Integer.parseInt(leer.nextLine()));
+        area.setCantEmpleado(Integer.parseInt(leer.nextLine()));
         System.out.println("Digite la cantidad de edificios: ");
-        area.setNEdificio(Integer.parseInt(leer.nextLine()));
+        area.setNumEdificio(Integer.parseInt(leer.nextLine()));
         System.out.println("El contrato del empleado es:");
         Dempleado.setTipo(leer.nextDouble());
         
@@ -66,7 +66,7 @@ public class datosMain {
         
         System.out.println("---------------Datos de Area-----------------");
         
-        DA = area.DatosA();
+        DA = area.datArea();
         System.out.println(DA);
         
       

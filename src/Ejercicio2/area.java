@@ -5,35 +5,17 @@ public class area {
     
     
 
-    void setCarea(int parseInt) {
-       
-    }
-
-    void setnombre(String nextLine) {
-        //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setCEmpleado(int parseInt) {
-         //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setNEdificio(int parseInt) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String DatosA() {
-        
-        
-        return null;
-        
-        
-    }
-    public class Area  {
-
     String nombre;
-    int Area, Empleado, Edificio;
+    int codArea, cantEmpleado, numEdificio;
 
-    public Area() {
+    public area() {
+    }
+
+    public area(String nombre, int codArea, int cantEmpleado, int numEdificio) {
+        this.nombre = nombre;
+        this.codArea = codArea;
+        this.cantEmpleado = cantEmpleado;
+        this.numEdificio = numEdificio;
     }
 
     public String getNombre() {
@@ -44,39 +26,40 @@ public class area {
         this.nombre = nombre;
     }
 
-    public int getCArea() {
-        return Area;
+    public int getCodArea() {
+        return codArea;
     }
 
-    public void setCArea(int CArea) {
-        this.Area = CArea;
+    public void setCodArea(int codArea) {
+        this.codArea = codArea;
     }
 
-    public int getCEmpleado() {
-        return Empleado;
+    public int getCantEmpleado() {
+        return cantEmpleado;
     }
 
-    public void setCEmpleado(int CEmpleado) {
-        this.Empleado = CEmpleado;
+    public void setCantEmpleado(int cantEmpleado) {
+        this.cantEmpleado = cantEmpleado;
     }
-
-    public int getNEdificio() {
-        return Edificio;
-    }
-
-    public void setNEdificio(int NEdificio) {
-        this.Edificio = NEdificio;
-    }
-String DatosA (){
-  String  Inf = "";
-  Inf +="El codigo de Area es:" + Area  +"\n";
-  Inf +="El nombre del Area es:" + nombre +"\n";
-  Inf +="La cantidad de empleados es:" + Empleado +"\n";
-  Inf +="La cantidad de edificios es: " + Edificio +"\n";
-  return Inf;
-}
 
     
-}
+
+    public int getNumEdificio() {
+        return numEdificio;
+    }
+
+    public void setNumEdificio(int numEdificio) {
+        this.numEdificio = numEdificio;
+    }
+    
+    
+    String datArea() {
+        String Inf = "";
+        Inf += "El nombre del Area es:" + nombre + "\n";
+        Inf += "El codigo de Area es:" + codArea + "\n";
+        Inf += "La cantidad de empleados es:" + cantEmpleado + "\n";
+        Inf += "La cantidad de edificios es: " + numEdificio + "\n";
+        return Inf;
+    }
 
 }
